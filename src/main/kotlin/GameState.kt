@@ -50,7 +50,7 @@ fun GameState.makeMove(position: Position) : GameState {
 
     // Alterna o jogador (1 → 2, 2 → 1)
     val newCurrentPlayer = if (currentPlayer == 1) 2 else 1
-    return GameState(board=newBoard, currentPlayer = newCurrentPlayer)
+    return GameState(board = newBoard, currentPlayer = newCurrentPlayer)
 }
 
 
