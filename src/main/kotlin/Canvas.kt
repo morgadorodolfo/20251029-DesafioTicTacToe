@@ -16,7 +16,7 @@ fun Canvas.draw(gameState: GameState){
     erase()
 
     //DRAW GRID
-    //desenha duas linhas verticais e duas linhas horizontais (1..2)
+    //desenha duas linhas verticais e duas linhas horizontais
     for (i in 1 until COLS_PER_ROW) {
         // Linhas verticais
         canvas.drawLine(i * CELL_SIZE, 0, i * CELL_SIZE, BOARD_SIZE)
@@ -38,6 +38,7 @@ fun Canvas.draw(gameState: GameState){
     canvas.drawText(CELL_SIZE, BOARD_SIZE - 20, gameState.message, BLACK, 20)
 
 }
+
 
 
 
