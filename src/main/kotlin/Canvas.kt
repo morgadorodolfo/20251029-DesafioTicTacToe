@@ -2,7 +2,7 @@
 import pt.isel.canvas.*
 
 // -----------------------------------------------------------------------------
-// - Canvas
+// - Canvas - A vista (view)
 // -----------------------------------------------------------------------------
 // Constantes que definem o tamanho do tabuleiro e das células.
 const val BOARD_SIZE = 300        // Tamanho total do Canvas em pixels (300x300) - configurável
@@ -35,9 +35,10 @@ fun Canvas.draw(gameState: GameState){
     }
 
     //DRAW MESSAGE
-    canvas.drawText(CELL_SIZE, BOARD_SIZE - 20, gameState.message, BLACK, 20)
+    if(gameState.gameOver) canvas.drawText(CELL_SIZE, BOARD_SIZE - 20, gameState.message, BLACK, 20)
 
 }
+
 
 
 
