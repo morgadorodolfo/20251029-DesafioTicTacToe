@@ -9,7 +9,7 @@ val canvas = Canvas(BOARD_SIZE, BOARD_SIZE, WHITE)
 var gameState: GameState = GameState()
 
 // -----------------------------------------------------------------------------
-// Função main com um único ponto de mutabilidade
+// Função main com o único ponto de mutabilidade
 // - Desenha o tabuleiro inicial
 // - Regista o evento do rato para as jogadas
 // - Por cada jogada é devolvido um novo estado, sendo a var gameState atualizada
